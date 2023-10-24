@@ -1,4 +1,3 @@
-const accessKey = '5881028'
 
 generateBtn = document.getElementById('resultButton')
 result = document.getElementById('result')

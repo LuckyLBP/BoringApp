@@ -43,3 +43,11 @@ button {
     display: flex;
     padding: 1rem;
 }
+
+.result-box h3 {
+    margin-right: 1rem;
+}
+
+#result {
+    font-weight: 200;
+}
