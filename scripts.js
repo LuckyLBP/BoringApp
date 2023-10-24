@@ -1,6 +1,8 @@
 
+
+///// ACTIVITY /////
 generateBtn = document.getElementById('resultButton')
-result = document.getElementById('result')
+result = document.getElementById('result-activity')
 
 async function generateAct() {
 
@@ -15,4 +17,22 @@ async function generateAct() {
 
 generateBtn.addEventListener('click', () => {
     generateAct()
+})
+
+///// JOKES /////
+generateBtnJoke = document.getElementById('resultButton-jokes')
+resultJoke = document.getElementById('result-jokes')
+
+async function generateJoke() {
+
+    const url = `https://v2.jokeapi.dev/joke/Dark,Pun?type=single`
+
+    const response = await fetch(url)
+    const data = await response.json()
+
+    resultJoke.innerText = data.joke;
+}
+
+generateBtnJoke.addEventListener('click', () => {
+    generateJoke()
 })
